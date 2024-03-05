@@ -41,19 +41,12 @@
   <style>
     body {
       font-family: 'Roboto', sans-serif;
-      font-size: 16px;
+         font-size: 16px;
       line-height: 1.5;
       margin: auto;
+      color: #444444;
     }
-    #overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      display: none;
-    }
+
     ul {
       list-style-type: none;
       margin: 0;
@@ -109,19 +102,19 @@
     .mainText {
       margin: 50px;
     }
-    h1 {
+      h1 {
       text-align: center;
+      color: #444444;
+      font-size: xxx-large;
     }
-    .doggyImage {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+
+    h2 {
+      color: #444444;
+      font-size: xx-large;
     }
-    .onSiteToFind {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
+  .toCenter{
+    text-align: center;
+  }
 
       background-color: rgba(227, 214, 214, 0.92);
       li a{
@@ -137,38 +130,37 @@
 <body>
 
 <header>
-<!--  <iframe src="html/designElements/navigationToolBar.html" width="100%" height="100px" frameborder="0"></iframe>-->
   <ul class="toolBar">
     <li><a href="#home">Головна</a></li>
     <li><a href="#forum">Форум</a></li>
     <li><a href="#eduMaterials">Навчальні матеріали</a></li>
     <li class="dropdown">
-      <a href="javascript:void(0)" class="dropdown-btn">Породжувальні</a>
+      <a href="/my_site/html/patterns/create.html" class="dropdown-btn">Породжувальні</a>
       <div class="dropdown-content">
-        <a href="#">Фабричний метод</a>
-        <a href="#">Будівельник</a>
-        <a href="#">Прототип</a>
+        <a href="/my_site/html/patterns/createrPat/factory.html">Фабричний метод</a>
+        <a href="/my_site/html/patterns/createrPat/builder.html">Будівельник</a>
+        <a href="/my_site/html/patterns/createrPat/prototype.html">Прототип</a>
       </div>
     </li>
     <li class="dropdown">
-      <a href="javascript:void(0)" class="dropdown-btn">Структурні</a>
+      <a href="/my_site/html/patterns/structural.html" class="dropdown-btn">Структурні</a>
       <div class="dropdown-content">
-        <a href="#">Адаптер</a>
-        <a href="#">Міст</a>
-        <a href="#">Декоратор</a>
+        <a href="/my_site/html/patterns/structuralPat/adapter.html">Адаптер</a>
+        <a href="/my_site/html/patterns/structuralPat/bridge.html">Міст</a>
+        <a href="/my_site/html/patterns/structuralPat/decorator.html">Декоратор</a>
       </div>
     </li>
     <li class="dropdown">
-      <a href="javascript:void(0)" class="dropdown-btn">Поведінкові</a>
+      <a href="/my_site/html/patterns/behaviour.html" class="dropdown-btn">Поведінкові</a>
       <div class="dropdown-content">
-        <a href="#">Ланцюжок обов’язків</a>
-        <a href="#">Спостерігач</a>
-        <a href="#">Стратегія</a>
+        <a href="/my_site/html/patterns/behaviourPat/chain.html">Ланцюжок обов’язків</a>
+        <a href="/my_site/html/patterns/behaviourPat/observer.html">Спостерігач</a>
+        <a href="/my_site/html/patterns/behaviourPat/strategy.html">Стратегія</a>
       </div>
     </li>
   </ul>
-  <h1>Ласкаво просимо до Світу Патернів Проектування!</h1>
 
+  <h1>Ласкаво просимо до Світу Патернів Проектування!</h1>
 </header>
 <main class="mainText">
   <p>Вітаємо вас на веб-сайті, присвяченому найкращим практикам у програмному проектуванні - патернам проектування. Тут
