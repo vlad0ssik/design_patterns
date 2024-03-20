@@ -120,37 +120,50 @@
 <header>
   <nav class="nav">
     <ul class="toolBar">
-      <li><a href="../../../index.html">Головна</a></li>
+      <li><a href=".././index.html">Головна</a></li>
       <li><a href="#forum">Форум</a></li>
       <li><a href="#eduMaterials">Навчальні матеріали</a></li>
       <li class="dropdown">
-        <a href="../../../html/patterns/create.html" class="dropdown-btn">Породжувальні</a>
+        <nav class="nav">
+    <ul class="toolBar">
+      <li><a href=".././index.html">Головна</a></li>
+      <li><a href="#forum">Форум</a></li>
+      <li><a href="#eduMaterials">Навчальні матеріали</a></li>
+      <li class="dropdown">
+        <a href="./create.html" class="dropdown-btn">Породжувальні</a>
         <div class="dropdown-content">
-          <a href="../../../html/patterns/createrPat/factory.html">Фабричний метод</a>
-          <a href="../../../html/patterns/createrPat/builder.html">Будівельник</a>
-          <a href="../../../html/patterns/createrPat/prototype.html">Прототип</a>
+          <a href="./factory.html">Фабричний метод</a>
+          <a href="./builder.html">Будівельник</a>
+          <a href="./prototype.html">Прототип</a>
         </div>
       </li>
       <li class="dropdown">
-        <a href="../../../html/patterns/structural.html" class="dropdown-btn">Структурні</a>
+        <a href="./structural.html" class="dropdown-btn">Структурні</a>
         <div class="dropdown-content">
-          <a href="../../../html/patterns/structuralPat/adapter.html">Адаптер</a>
-          <a href="../../../html/patterns/structuralPat/bridge.html">Міст</a>
-          <a href="../../../html/patterns/structuralPat/decorator.html">Декоратор</a>
+          <a href="./adapter.html">Адаптер</a>
+          <a href="./bridge.html">Міст</a>
+          <a href="./decorator.html">Декоратор</a>
         </div>
       </li>
       <li class="dropdown">
-        <a href="../../../html/patterns/behaviour.html" class="dropdown-btn">Поведінкові</a>
+        <a href="./behaviour.html" class="dropdown-btn">Поведінкові</a>
         <div class="dropdown-content">
-          <a href="../../../html/patterns/behaviourPat/chain.html">Ланцюжок обов’язків</a>
-          <a href="../../../html/patterns/behaviourPat/observer.html">Спостерігач</a>
-          <a href="../../../html/patterns/behaviourPat/strategy.html">Стратегія</a>
+          <a href="./chain.html">Ланцюжок обов’язків</a>
+          <a href="./observer.html">Спостерігач</a>
+          <a href="./strategy.html">Стратегія</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+        <div class="dropdown-content">
+          <a href="./chain.html">Ланцюжок обов’язків</a>
+          <a href="./observer.html">Спостерігач</a>
+          <a href="./strategy.html">Стратегія</a>
         </div>
       </li>
     </ul>
   </nav>
 </header>
-
 <main class="mainText">
 
   <p>
@@ -176,7 +189,7 @@
       ланцюжком.
     </p>
 
-    <div class="centerAndColor"><img src="../../../img/patterns/behavioral/chain/chain-of-responsibility.png"
+    <div class="centerAndColor"><img src="../img/patterns/behavioral/chain/chain-of-responsibility.png"
                                      height="400"
                                      width="640"
                                      class="chainImg"/></div>
@@ -195,7 +208,7 @@
       у
       систему, якщо його запит містить логін і пароль. Але, якщо така спроба не вдалась, то перевіряти розширені права
       доступу просто немає сенсу.</p><br>
-    <div class="centerAndColor"><img src="../../../img/patterns/behavioral/chain/problem1-uk.png" height="240"
+    <div class="centerAndColor"><img src="../img/patterns/behavioral/chain/problem1-uk.png" height="240"
                                      width="600"/>
       <p>
         <i> Запит проходить ряд перевірок перед доступом до системи замовлень.</i>
@@ -223,7 +236,7 @@
     <br>
 
     <div class="centerAndColor"
-    ><img src="../../../img/patterns/behavioral/chain/problem2-uk.png" height="370" width="610"/>
+    ><img src="../img/patterns/behavioral/chain/problem2-uk.png" height="370" width="610"/>
       <p>
         <i> З часом код перевірок стає все більш заплутаним.</i>
       </p></div>
@@ -268,7 +281,7 @@
     </p>
 
     <div class="centerAndColor" style="text-align: center;"><img
-      src="../../../img/patterns/behavioral/chain/solution1-uk.png" height="160"
+      src="../img/patterns/behavioral/chain/solution1-uk.png" height="160"
       width="640"/>
       <p><i>Обробники слідують в ланцюжку один за іншим.</i></p>
     </div>
@@ -287,7 +300,7 @@
       структури об’єктів, в яку зазвичай і згорнуті елементи користувацького інтерфейсу.
     </p>
     <div class="centerAndColor">
-      <img src="../../../img/patterns/behavioral/chain/solution2-uk.png" height="300" width="520"/>
+      <img src="../img/patterns/behavioral/chain/solution2-uk.png" height="300" width="520"/>
       <p><i> Ланцюжок можна виділити навіть із дерева об’єктів.</i></p>
     </div>
     <p>
@@ -300,7 +313,7 @@
   <div class="analogyWithLife">
     <h2>🚗 Аналогія з життя</h2>
     <div class="centerAndColor">
-      <img src="../../../img/patterns/behavioral/chain/chain-of-responsibility-comic-1-uk.png" height="300"
+      <img src="../img/patterns/behavioral/chain/chain-of-responsibility-comic-1-uk.png" height="300"
            width="600"/>
       <p><i>
         Приклад спілкування з підтримкою.
@@ -330,7 +343,7 @@
   </div>
   <div class="structure">
     <h2>🖇️ Структура</h2>
-    <div class="centerAndColor"><img src="../../../img/patterns/behavioral/chain/structure-indexed.png" height="430"
+    <div class="centerAndColor"><img src="../img/patterns/behavioral/chain/structure-indexed.png" height="430"
                                      width="380"/></div>
     <ol>
       <li>
@@ -384,7 +397,7 @@
       У цьому прикладі <b>Ланцюжок обов’язків</b> відповідає за показ контекстної допомоги для активних елементів
       інтерфейсу користувача.
     </p>
-    <div class="centerAndColor"><img src="../../../img/patterns/behavioral/chain/structure-indexed.png" height="430"
+    <div class="centerAndColor"><img src="../img/patterns/behavioral/chain/structure-indexed.png" height="430"
                                      width="380"/>
       <p>
         <i>Графічний інтерфейс побудований за допомогою компонувальника, де кожен елемент має посилання на свій
@@ -401,7 +414,7 @@
       контекстної допомоги.
     </p>
     <div class="centerAndColor">
-      <img src="../../../img/patterns/behavioral/chain/example2-uk.png" height="310" width="250"/>
+      <img src="../img/patterns/behavioral/chain/example2-uk.png" height="310" width="250"/>
       <p>
         <i>
           Приклад виклику контекстної допомоги у ланцюжку об’єктів UI.

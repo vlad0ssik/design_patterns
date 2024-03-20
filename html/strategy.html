@@ -126,31 +126,45 @@
 <header>
   <nav class="nav">
     <ul class="toolBar">
-      <li><a href="../../../index.html">Головна</a></li>
+      <li><a href=".././index.html">Головна</a></li>
       <li><a href="#forum">Форум</a></li>
       <li><a href="#eduMaterials">Навчальні матеріали</a></li>
       <li class="dropdown">
-        <a href="../../../html/patterns/create.html" class="dropdown-btn">Породжувальні</a>
+        <nav class="nav">
+    <ul class="toolBar">
+      <li><a href=".././index.html">Головна</a></li>
+      <li><a href="#forum">Форум</a></li>
+      <li><a href="#eduMaterials">Навчальні матеріали</a></li>
+      <li class="dropdown">
+        <a href="./create.html" class="dropdown-btn">Породжувальні</a>
         <div class="dropdown-content">
-          <a href="../../../html/patterns/createrPat/factory.html">Фабричний метод</a>
-          <a href="../../../html/patterns/createrPat/builder.html">Будівельник</a>
-          <a href="../../../html/patterns/createrPat/prototype.html">Прототип</a>
+          <a href="./factory.html">Фабричний метод</a>
+          <a href="./builder.html">Будівельник</a>
+          <a href="./prototype.html">Прототип</a>
         </div>
       </li>
       <li class="dropdown">
-        <a href="../../../html/patterns/structural.html" class="dropdown-btn">Структурні</a>
+        <a href="./structural.html" class="dropdown-btn">Структурні</a>
         <div class="dropdown-content">
-          <a href="../../../html/patterns/structuralPat/adapter.html">Адаптер</a>
-          <a href="../../../html/patterns/structuralPat/bridge.html">Міст</a>
-          <a href="../../../html/patterns/structuralPat/decorator.html">Декоратор</a>
+          <a href="./adapter.html">Адаптер</a>
+          <a href="./bridge.html">Міст</a>
+          <a href="./decorator.html">Декоратор</a>
         </div>
       </li>
       <li class="dropdown">
-        <a href="../../../html/patterns/behaviour.html" class="dropdown-btn">Поведінкові</a>
+        <a href="./behaviour.html" class="dropdown-btn">Поведінкові</a>
         <div class="dropdown-content">
-          <a href="../../../html/patterns/behaviourPat/chain.html">Ланцюжок обов’язків</a>
-          <a href="../../../html/patterns/behaviourPat/observer.html">Спостерігач</a>
-          <a href="../../../html/patterns/behaviourPat/strategy.html">Стратегія</a>
+          <a href="./chain.html">Ланцюжок обов’язків</a>
+          <a href="./observer.html">Спостерігач</a>
+          <a href="./strategy.html">Стратегія</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+        <div class="dropdown-content">
+          <a href="./chain.html">Ланцюжок обов’язків</a>
+          <a href="./observer.html">Спостерігач</a>
+          <a href="./strategy.html">Стратегія</a>
         </div>
       </li>
     </ul>
@@ -165,7 +179,7 @@
       кожен з них у власному класі. Після цього алгоритми можна заміняти один на інший прямо під час виконання програми.
     </p>
     <div class="centerAndColor" style="text-align: center;"><img
-      src="../../../img/patterns/behavioral/strategy/strategy.png" height="400" width="640" alt="Суть паттерна"/>
+      src="../img/patterns/behavioral/strategy/strategy.png" height="400" width="640" alt="Суть паттерна"/>
     </div>
   </section>
   <section class="problem">
@@ -185,7 +199,7 @@
       віддаленому майбутньому — маршрути, пов’язані з відвідуванням цікавих та визначних місць.
     </p>
     <div class="centerAndColor" style="text-align: center;"><img
-      src="../../../img/patterns/behavioral/strategy/problem.png" height="150" width="330"
+      src="../img/patterns/behavioral/strategy/problem.png" height="150" width="330"
       alt="Отношение проблемы навигатора"/>
       <p>Код навігатора стає занадто роздутим.
       </p></div>
@@ -217,7 +231,7 @@
     </p>
     <div class="centerAndColor" style="text-align: center;">
 
-      <img src="../../../img/patterns/behavioral/strategy/solution.png" height="280" width="570"
+      <img src="../img/patterns/behavioral/strategy/solution.png" height="280" width="570"
            alt="Стратегії побудови шляху"/>
       <p>
         Стратегії побудови шляху.
@@ -237,7 +251,7 @@
   <section class="analogyWithLife">
     <h2>🚗 Аналогія з життя</h2>
     <div class="centerAndColor" style="text-align: center;"><img
-      src="../../../img/patterns/behavioral/strategy/strategy.png" height="400" width="640"
+      src="../img/patterns/behavioral/strategy/strategy.png" height="400" width="640"
       alt="Різні стратегії потрапляння до аеропорту"/>
       <p>
         Різні стратегії потрапляння до аеропорту.
@@ -250,7 +264,7 @@
   <section class="structure" style="display: block; margin-top: 10px">
     <h2>🖇️ Структура</h2>
     <div class="centerAndColor" style="text-align: center;"><img
-      src="../../../img/patterns/behavioral/strategy/structure.png" height="370" width="440"
+      src="../img/patterns/behavioral/strategy/structure.png" height="370" width="440"
       alt="Структура в Uml діаграмі"/>
     </div>
     <div class="listStructure">

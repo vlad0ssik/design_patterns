@@ -116,37 +116,53 @@
 </head>
 <body>
 
-<header>  <nav class="nav">
-  <ul class="toolBar">
-    <li><a href="../../../index.html">Головна</a></li>
-    <li><a href="#forum">Форум</a></li>
-    <li><a href="#eduMaterials">Навчальні матеріали</a></li>
-    <li class="dropdown">
-      <a href="../../../html/patterns/create.html" class="dropdown-btn">Породжувальні</a>
-      <div class="dropdown-content">
-        <a href="../../../html/patterns/createrPat/factory.html">Фабричний метод</a>
-        <a href="../../../html/patterns/createrPat/builder.html">Будівельник</a>
-        <a href="../../../html/patterns/createrPat/prototype.html">Прототип</a>
-      </div>
-    </li>
-    <li class="dropdown">
-      <a href="../../../html/patterns/structural.html" class="dropdown-btn">Структурні</a>
-      <div class="dropdown-content">
-        <a href="../../../html/patterns/structuralPat/adapter.html">Адаптер</a>
-        <a href="../../../html/patterns/structuralPat/bridge.html">Міст</a>
-        <a href="../../../html/patterns/structuralPat/decorator.html">Декоратор</a>
-      </div>
-    </li>
-    <li class="dropdown">
-      <a href="../../../html/patterns/behaviour.html" class="dropdown-btn">Поведінкові</a>
-      <div class="dropdown-content">
-        <a href="../../../html/patterns/behaviourPat/chain.html">Ланцюжок обов’язків</a>
-        <a href="../../../html/patterns/behaviourPat/observer.html">Спостерігач</a>
-        <a href="../../../html/patterns/behaviourPat/strategy.html">Стратегія</a>
-      </div>
-    </li>
-  </ul>
-</nav>
+
+<header>
+  <nav class="nav">
+    <ul class="toolBar">
+      <li><a href=".././index.html">Головна</a></li>
+      <li><a href="#forum">Форум</a></li>
+      <li><a href="#eduMaterials">Навчальні матеріали</a></li>
+      <li class="dropdown">
+        <nav class="nav">
+    <ul class="toolBar">
+      <li><a href=".././index.html">Головна</a></li>
+      <li><a href="#forum">Форум</a></li>
+      <li><a href="#eduMaterials">Навчальні матеріали</a></li>
+      <li class="dropdown">
+        <a href="./create.html" class="dropdown-btn">Породжувальні</a>
+        <div class="dropdown-content">
+          <a href="./factory.html">Фабричний метод</a>
+          <a href="./builder.html">Будівельник</a>
+          <a href="./prototype.html">Прототип</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="./structural.html" class="dropdown-btn">Структурні</a>
+        <div class="dropdown-content">
+          <a href="./adapter.html">Адаптер</a>
+          <a href="./bridge.html">Міст</a>
+          <a href="./decorator.html">Декоратор</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="./behaviour.html" class="dropdown-btn">Поведінкові</a>
+        <div class="dropdown-content">
+          <a href="./chain.html">Ланцюжок обов’язків</a>
+          <a href="./observer.html">Спостерігач</a>
+          <a href="./strategy.html">Стратегія</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+        <div class="dropdown-content">
+          <a href="./chain.html">Ланцюжок обов’язків</a>
+          <a href="./observer.html">Спостерігач</a>
+          <a href="./strategy.html">Стратегія</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
 </header>
 <main class="mainText">
 
@@ -172,7 +188,7 @@
     </p>
 
     <div class="centerAndColor">
-      <img src="../../../img/patterns/behavioral/observer/observer.png" height="400" width="640"/></div>
+      <img src="../img/patterns/behavioral/observer/observer.png" height="400" width="640"/></div>
     <p>
   </div>
   <div class="problems">
@@ -187,7 +203,7 @@
       Покупець може щодня ходити до магазину, щоб перевіряти наявність товару. Але через це він буде дратуватися,
       даремно витрачаючи свій дорогоцінний час.</p><br>
     <div class="centerAndColor">
-      <img src="../../../img/patterns/behavioral/observer/observer-comic-1-uk.png" height="300" width="600"/>
+      <img src="../img/patterns/behavioral/observer/observer-comic-1-uk.png" height="300" width="600"/>
       <p>
         <i> Постійне відвідування магазину чи спам?</i>
       </p></div>
@@ -215,7 +231,7 @@
 
 
     <div class="centerAndColor" style="text-align: center;">
-      <img src="../../../img/patterns/behavioral/observer/solution1-uk.png" height="180" width="470"/>
+      <img src="../img/patterns/behavioral/observer/solution1-uk.png" height="180" width="470"/>
       <p><i>Підписка на події.</i></p>
     </div>
     <br>
@@ -228,7 +244,7 @@
       мати єдиний метод оповіщення.
     </p>
     <div class="centerAndColor">
-      <img src="../../../img/patterns/behavioral/observer/solution2-uk.png" height="370" width="460"/>
+      <img src="../img/patterns/behavioral/observer/solution2-uk.png" height="370" width="460"/>
       <p><i> Сповіщення про події.</i></p>
     </div>
     <p>
@@ -238,7 +254,7 @@
     </p></div>
   <div class="analogyWithLife">
     <h2>🚗 Аналогія з життя</h2>
-    <div class="centerAndColor"><img src="../../../img/patterns/behavioral/observer/observer-comic-2-uk.png"
+    <div class="centerAndColor"><img src="../img/patterns/behavioral/observer/observer-comic-2-uk.png"
                                      height="300" width="600"/>
       <p><i>
         Передплата та доставка газет.
@@ -257,7 +273,7 @@
   <div class="structure">
     <h2>🖇️ Структура</h2>
     <div class="centerAndColor">
-      <img src="../../../img/patterns/behavioral/observer/structure-indexed.png" height="330" width="620"/></div>
+      <img src="../img/patterns/behavioral/observer/structure-indexed.png" height="330" width="620"/></div>
     <ol>
       <li>
         <p>
@@ -312,7 +328,7 @@
       стану.
     </p>
     <div class="centerAndColor">
-      <img src="../../../img/patterns/behavioral/observer/example.png" height="430" width="510"/>
+      <img src="../img/patterns/behavioral/observer/example.png" height="430" width="510"/>
       <p>
         <i>Приклад сповіщення об’єктів про події в інших об’єктах.
         </i>
