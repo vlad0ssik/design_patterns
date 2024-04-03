@@ -399,7 +399,85 @@
       контекстної допомоги.
     </p>
     <div class="centerAndColor">
-      <img src="../img/patterns/behavioral/chain/example2-uk.png" height="310" width="250"/>
+<div class="charForMe">
+  <svg width="1000" height="400"></svg>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script>
+    const svg = d3.select("svg"),
+      width = +svg.attr("width"),
+      height = +svg.attr("height");
+
+    const nodes = [
+      { id: 1, x: 100, y: 100, imageUrl: "https://i.imgur.com/e7qolE2.jpg" },
+      { id: 2, x: 200, y: 100, imageUrl: "https://i.imgur.com/ZgPDSSY.jpg" },
+      { id: 3, x: 300, y: 100, imageUrl: "https://i.imgur.com/sHLcTXh.jpg" },
+      { id: 4, x: 400, y: 100, imageUrl: "https://i.imgur.com/7KX1Crc.jpg" }
+    ];
+
+    const links = [
+      { source: nodes[0], target: nodes[1] },
+      { source: nodes[1], target: nodes[2] },
+      { source: nodes[2], target: nodes[3] }
+    ];
+
+    const simulation = d3.forceSimulation(nodes)
+      .force("link", d3.forceLink(links).id(d => d.id))
+      .force("charge", d3.forceManyBody().strength(-10000))
+      .force("center", d3.forceCenter(width / 2, height / 2));
+
+    const link = svg.append("g")
+      .attr("class", "links")
+      .selectAll("line")
+      .data(links)
+      .enter().append("line")
+      .attr("class", "link");
+
+    const node = svg.selectAll(".node")
+      .data(nodes)
+      .enter().append("image")
+      .attr("class", "node")
+      .attr("xlink:href", d => d.imageUrl)
+      .attr("width", 120) // vse v 2 raza bolshe
+      .attr("height", 120)
+      .attr("x", d => d.x - 60)
+      .attr("y", d => d.y - 60)
+      .call(d3.drag()
+        .on("start", dragstarted)
+        .on("drag", dragged)
+        .on("end", dragended));
+
+    simulation.on("tick", () => {
+      link
+        .attr("x1", d => d.source.x)
+        .attr("y1", d => d.source.y)
+        .attr("x2", d => d.target.x)
+        .attr("y2", d => d.target.y);
+
+      node.attr("x", d => d.x - 60)
+        .attr("y", d => d.y - 60);
+    });
+
+    function dragstarted(event, d) {
+      if (!event.active) simulation.alphaTarget(0.2).restart();
+      d.fx = d.x;
+      d.fy = d.y;
+    }
+
+    function dragged(event, d) {
+      d.fx = event.x;
+      d.fy = event.y;
+    }
+
+    function dragended(event, d) {
+      if (!event.active) simulation.alphaTarget(0);
+      d.fx = null;
+      d.fy = null;
+    }
+  </script>
+
+</div>
+
       <p>
         <i>
           Приклад виклику контекстної допомоги у ланцюжку об’єктів UI.
