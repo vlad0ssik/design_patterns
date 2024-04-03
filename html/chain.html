@@ -412,7 +412,7 @@
       { id: 1, x: 100, y: 100, imageUrl: "https://i.imgur.com/e7qolE2.jpg" },
       { id: 2, x: 200, y: 100, imageUrl: "https://i.imgur.com/ZgPDSSY.jpg" },
       { id: 3, x: 300, y: 100, imageUrl: "https://i.imgur.com/sHLcTXh.jpg" },
-      { id: 4, x: 400, y: 100, imageUrl: "https://i.imgur.com/7KX1Crc.jpg" }
+      { id: 4, x: 400, y: 100, imageUrl: "https://i.imgur.com/TQlYnwe.jpg" }
     ];
 
     const links = [
@@ -423,7 +423,7 @@
 
     const simulation = d3.forceSimulation(nodes)
       .force("link", d3.forceLink(links).id(d => d.id))
-      .force("charge", d3.forceManyBody().strength(-10000))
+      .force("charge", d3.forceManyBody().strength(-5000))
       .force("center", d3.forceCenter(width / 2, height / 2));
 
     const link = svg.append("g")
@@ -431,7 +431,10 @@
       .selectAll("line")
       .data(links)
       .enter().append("line")
-      .attr("class", "link");
+      .attr("class", "link")
+      .style("stroke", "#555") // Set stroke color
+      .style("stroke-width", 2); // Set stroke width
+
 
     const node = svg.selectAll(".node")
       .data(nodes)
