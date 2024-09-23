@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Світ патернів проектування</title>
+  <!--  <style>-->
+  <!--    body {-->
+  <!--      font-family: 'Roboto', sans-serif;-->
+  <!--      font-size: 16px;-->
+  <!--      line-height: 1.5;-->
+  <!--      margin: auto;-->
+  <!--    }-->
+  <!--    .mainText {-->
+  <!--      margin: 50px;-->
+  <!--    }-->
+  <!--    h1 {-->
+  <!--      text-align: center;-->
+  <!--    }-->
+  <!--    .doggyImage {-->
+  <!--      display: block;-->
+  <!--      margin-left: auto;-->
+  <!--      margin-right: auto;-->
+  <!--    }-->
+<!--      .onSiteToFind {-->
+<!--        list-style-type: none;-->
+<!--        margin: 0;-->
+<!--        padding: 0;-->
+<!--        overflow: hidden;-->
+<!--      -->
+<!--        background-color: rgba(227, 214, 214, 0.92);-->
+<!--        li a{-->
+<!--          color: #000000;-->
+<!--        }-->
+<!--        li a:hover, .dropdown:hover .dropdown-btn {-->
+<!--          background-color: #5e5252;-->
+<!--          color: #e2e6ec;-->
+<!--        }-->
+<!--      }-->
+  <!--  </style>-->
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      margin: auto;
+      color: #444444;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a, .dropdown-btn {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover, .dropdown:hover .dropdown-btn {
+      background-color: rgba(255, 0, 0, 0.7);
+    }
+
+    li.dropdown {
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .mainText {
+      margin: 50px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #444444;
+      font-size: xxx-large;
+    }
+
+    h2 {
+      color: #444444;
+      font-size: xx-large;
+    }
+
+    .toCenter {
+      text-align: center;
+    }
+
+    .onSiteToFind {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+
+      background-color: rgba(227, 214, 214, 0.92);
+      li a{
+        color: #000000;
+      }
+      li a:hover, .dropdown:hover .dropdown-btn {
+        background-color: #5e5252;
+        color: #e2e6ec;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+<header>
+  <nav class="nav">
+    <ul class="toolBar">
+      <li><a href="./index.html">Головна</a></li>
+      <li><a href="#forum">Форум</a></li>
+      <li><a href="#eduMaterials">Навчальні матеріали</a></li>
+      <li class="dropdown">
+        <a href="./html/create.html" class="dropdown-btn">Породжувальні</a>
+        <div class="dropdown-content">
+          <a href="./html/factory.html">Фабричний метод</a>
+          <a href="./html/builder.html">Будівельник</a>
+          <a href="./html/prototype.html">Прототип</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="./html/structural.html" class="dropdown-btn">Структурні</a>
+        <div class="dropdown-content">
+          <a href="./html/adapter.html">Адаптер</a>
+          <a href="./html/bridge.html">Міст</a>
+          <a href="./html/decorator.html">Декоратор</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="./html/behaviour.html" class="dropdown-btn">Поведінкові</a>
+        <div class="dropdown-content">
+          <a href="./html/chain.html">Ланцюжок обов’язків</a>
+          <a href="./html/observer.html">Спостерігач</a>
+          <a href="./html/strategy.html">Стратегія</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <h1>Ласкаво просимо до Світу Патернів Проектування!</h1>
+</header>
+<main class="mainText">
+  <p>Вітаємо вас на веб-сайті, присвяченому найкращим практикам у програмному проектуванні - патернам проектування. Тут
+    ви знайдете всю необхідну інформацію, щоб розуміти, використовувати та розвивати власні навички у застосуванні
+    патернів проектування.</p>
+  <p>Патерни проектування - це чудовий інструмент для розробників, які прагнуть до ефективного та масштабованого
+    програмного забезпечення. Вони дозволяють створювати розумну архітектуру, легко підтримувати код та забезпечувати
+    гнучкість у розвитку програмних продуктів.</p>
+  <h2>На нашому веб-сайті ви знайдете:</h2>
+  <ul class="onSiteToFind">
+    <li class="onSiteUnder"><a href="#">Огляд Патернів: Перегляньте різноманітні патерни проектування, від базових до
+      складних, з
+      викладенням прикладів та використання в реальних сценаріях.</a></li>
+
+    <li class="onSiteUnder"><a href="#">Навчальні Матеріали: Доступ до навчальних матеріалів, які допоможуть вам краще
+      зрозуміти сутність
+      кожного патерну та його застосування.</a></li>
+    <li class="onSiteUnder"><a href="#">Форум та Обговорення: Приєднуйтеся до спільноти розробників, обговорюйте питання
+      та діліться
+      досвідом зі застосування патернів проектування.</a></li>
+    <li class="onSiteUnder"><a href="#">Новини та Оновлення: Будьте в курсі останніх тенденцій та новин у світі патернів
+      проектування.</a>
+    </li>
+  </ul>
+  <p>Нехай наш веб-сайт стане вашим надійним путівником у світі патернів проектування, допомагаючи вам підняти ваші
+    навички розробника на новий рівень!</p>
+</main>
+<footer class="footer">
+
+</footer>
+</body>
+</html>
